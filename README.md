@@ -20,4 +20,4 @@ Rules:
 >
 >The range of numbers and luck criteria can be customized in the JavaScript code.
 
-You can view a live demo of the luck checker game here:
+You can view a live demo of the luck checker game here: https://srinavyatalluri.github.io/LuckChecker/

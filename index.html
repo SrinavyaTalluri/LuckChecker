@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luck Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Number Quest</h1>
+    
+    <input
+      id="guessnumber"
+      onclick="alert('Please enter a number between 1 and 10')"
+    />
+    <br />
+    <button onclick="check()">Check</button>
+    <p id="result">Lets check your luck</p>
+    <p id="score">Score:10</p>
+    <div id="encouragement" style="display: none">
+      <h1>Don't give up!</h1>
+      <h2>You can definitely do it!<h2>
+      <p></p>
+    </div>
+
+    <script>
+      var guessnumbers = document.getElementById("guessnumber");
+      var results = document.getElementById("result");
+      var scores = document.getElementById("score");
+      var randomNumbers = Math.floor(Math.random() * 10) + 1;
+      var totalscore = 10;
+
+      function check() {
+        var enterednumber = guessnumbers.value;
+        if (randomNumbers == enterednumber) {
+          console.log("Right");
+          result.textContent = "Right";
+          alert("Wow \nYou Won the game....\nRefresh the page to Replay the game");
+        
+        } else {
+          totalscore = totalscore - 1;
+          score.textContent = "Score:" + totalscore;
+          result.textContent = "Wrong";
+          guessnumbers.value = "";
+          guessnumbers.focus();
+          encouragement.style.display = "block";
+          setTimeout(function () {
+           encouragement.style.display = "none";
+           }, 2000);
+        }
+      }
+     
+    </script>
+  </body>
+</html>

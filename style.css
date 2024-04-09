@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #74c7e7; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+h1 {
+    font-size:50px ;
+    text-align: center;
+    color:black;
+    margin-bottom: 20px;
+}
+button{
+    font-size: 30px;
+    padding:15px;
+}
+#guessnumber{
+    font-size: 40px;
+    margin-bottom: 20px;
+    
+}
+#result{
+    font-size:35px;
+    
+    margin-bottom: 10px;
+}
+#score{
+font-size: 35px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-bottom: 20px;
+
+
+}
+#encouragement
+{
+    border-style: solid;
+    border-radius: 70px;
+    padding: 15px 20px;
+    border-color:#e2546c;
+    background: #f8d6dc;
+   
+}
+#encouragement h1{
+    color: #ed95a4;
+
+}
+#encouragement h2{
+    text-align: center;
+    color: #ed95a4;
+
+}
